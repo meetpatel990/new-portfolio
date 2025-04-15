@@ -14,6 +14,10 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--light-bg);
     overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+
 }
 
 /* ====== Navbar ====== */
@@ -80,7 +84,8 @@ body {
 }
 
 .hero-img {
-    max-width: 80%; /* Adjust to make the image more responsive */
+    max-width: 80%;
+    /* Adjust to make the image more responsive */
     border-radius: 20px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
     transition: transform 0.4s ease;
@@ -98,7 +103,8 @@ body {
     padding: 12px 30px;
     border: none;
     border-radius: 50px;
-    font-size: 1rem; /* Slightly smaller font size for mobile */
+    font-size: 1rem;
+    /* Slightly smaller font size for mobile */
     font-weight: 600;
     box-shadow: 0 8px 20px rgba(0, 114, 255, 0.3);
     transition: all 0.3s ease;
@@ -110,19 +116,22 @@ body {
 }
 
 .social-bar {
-    position: sticky; /* Position it fixed for mobile scrolling */
+    position: sticky;
+    /* Position it fixed for mobile scrolling */
     top: 50%;
     left: 10px;
     transform: translateY(-50%);
     z-index: 1000;
     display: flex;
-    flex-direction: row; /* Change layout to horizontal on small screens */
+    flex-direction: row;
+    /* Change layout to horizontal on small screens */
     gap: 15px;
 }
 
 .social-bar a {
     color: #333;
-    font-size: 1.2rem; /* Slightly smaller for mobile */
+    font-size: 1.2rem;
+    /* Slightly smaller for mobile */
     transition: all 0.3s ease;
     position: relative;
 }
@@ -173,40 +182,48 @@ body {
 /* Media Queries for Larger Screens */
 @media (min-width: 768px) {
     .hero-img {
-        max-width: 400px; /* Larger image size for tablets */
+        max-width: 400px;
+        /* Larger image size for tablets */
     }
 
     .hero-btn {
-        font-size: 1.1rem; /* Larger button for tablet */
+        font-size: 1.1rem;
+        /* Larger button for tablet */
     }
 
     .social-bar {
-        flex-direction: column; /* Stack the icons vertically on tablets */
+        flex-direction: column;
+        /* Stack the icons vertically on tablets */
         left: 20px;
     }
 
     .social-bar a {
-        font-size: 1.4rem; /* Larger icons for tablets */
+        font-size: 1.4rem;
+        /* Larger icons for tablets */
     }
 }
 
 /* Media Queries for Desktop */
 @media (min-width: 1024px) {
     .hero-section {
-        text-align: left; /* Align text to the left for larger screens */
+        text-align: left;
+        /* Align text to the left for larger screens */
     }
 
     .hero-img {
-        max-width: 400px; /* Keep the image size consistent for desktop */
+        max-width: 400px;
+        /* Keep the image size consistent for desktop */
     }
 
     .hero-btn {
-        font-size: 1.1rem; /* Keep button size consistent for desktop */
+        font-size: 1.1rem;
+        /* Keep button size consistent for desktop */
     }
 
     .social-bar {
         left: 40px;
-        flex-direction: column; /* Keep social icons in a vertical column for desktop */
+        flex-direction: column;
+        /* Keep social icons in a vertical column for desktop */
     }
 }
 
@@ -229,7 +246,7 @@ body {
     }
 
     .hero-img {
-        margin-top: 0px;
+        margin-top: 30px;
     }
 }
 
@@ -237,6 +254,8 @@ body {
 /* About Section */
 .about-section {
     padding: 80px 0;
+    overflow-x: hidden;
+
 }
 
 .section-title {

@@ -110,7 +110,7 @@ body {
 }
 
 .social-bar {
-    position: fixed; /* Position it fixed for mobile scrolling */
+    position: sticky; /* Position it fixed for mobile scrolling */
     top: 50%;
     left: 10px;
     transform: translateY(-50%);
